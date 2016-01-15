@@ -1,0 +1,11 @@
+<ion-view view-title="Home" ng-controller="homeCtrl">
+	<ion-content>
+	<ion-list >
+	<ion-item ng-repeat="person in people" class="item-remove-animate item-avatar item-icon-right" ng-href="#/member/{{person.id}}">
+		<img ng-src="{{person.face}}">
+		<h2 class="center">{{person.name}} </h2>	
+		 <i class="icon ion-chevron-right icon-accessory item-icon-right"></i>	
+	</ion-item>
+	</ion-list>
+</ion-content>
+</ion-view>
